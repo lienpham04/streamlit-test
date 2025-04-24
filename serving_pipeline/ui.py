@@ -77,7 +77,7 @@ if resources_ready:
                 st.success("YOLO detection completed successfully!", icon=":material/check:")
 
 else:
-    st.error("Failed to download required resources. Please try again.!)
+    st.error("❌ Failed to download required resources. Please try again.!")
 
 
 #streamlit run serving_pipeline/ui.py
