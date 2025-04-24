@@ -1,4 +1,4 @@
-eimport streamlit as st
+eeimport streamlit as st
 import os
 from PIL import Image
 import cv2
@@ -7,7 +7,7 @@ from ultralytics import YOLO
 # Set config
 st.set_page_config(page_title="Multi-label Object Detection", layout="centered")
 
-from .utils import get_image_array, get_boxes_for_image, draw_boxes_on_image
+from serving_pipeline.utils import get_image_array, get_boxes_for_image, draw_boxes_on_image
 from downloader import download_resources
 
 # Titile
