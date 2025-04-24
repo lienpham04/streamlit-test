@@ -218,3 +218,10 @@ yarl==1.19.0
 yt-dlp==2025.3.31
 zipp==3.21.0
 ultralytics
+streamlit
+pandas
+pillow
+opencv-python-headless
+ultralytics
+gdown
+cv2
