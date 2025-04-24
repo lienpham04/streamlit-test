@@ -33,7 +33,7 @@ if resources_ready:
         default=[]
     )
 
-    # Ko select -> detect all
+    # Not select -> detect all
     detect_all = len(selected_objects) == 0
 
     # Lowercase
