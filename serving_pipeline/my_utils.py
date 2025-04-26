@@ -50,13 +50,13 @@ def draw_boxes_on_image(image_np, boxes):
         cv2.rectangle(image_np, (x1, y1), (x2, y2), color, 2)
 
         # Get text size
-        label_text = f"{label} {probability:.2f}"  # Format the label with the probability (2 decimal places)
+        label_text = f"{label} {probability:.2f}"
         (text_w, text_h), _ = cv2.getTextSize(label_text, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1)
 
         # Draw filled rectangle for label background
         cv2.rectangle(image_np, (x1, y1 - text_h - 6), (x1 + text_w + 4, y1), color, -1)
 
-        # Put label text with probability in white
+        # Probability text in label
         cv2.putText(image_np, label_text, (x1 + 2, y1 - 4),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)  # Larger, bolder text
 
